@@ -1,0 +1,115 @@
+:root {
+    /*---Main---*/
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+
+    /*---Hover---*/
+    --hover-color: #614fd0;
+
+    /*---Background---*/
+    --body-bg: #fefefe;
+    --card-bg: #fff;
+    --modal-bg: #fff;
+    --bg-transparency: rgba(0, 0, 0, 0.1);
+    --transparency-01: rgba(0, 0, 0, 0.1);
+    --transparency-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /*---Color filter---*/
+    --color-filter: invert(1);
+
+    /*---Box shadow---*/
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    /*---Font size---*/
+    --small-font: 0.9em;
+    --normal-font: 1em;
+
+    /*---Scroll bar---*/
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover: #454f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--first-color);
+    background: var(--body-bg);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*---Scroll to top---*/
+
+/*---Light/dark switcher---*/
+
+/*---Scroll bar---*/
+
+/*---Header---*/
+header {
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: .6s ease;
+}
+
+.nav-bar {
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+}
+
+.nav-bar .logo {
+    color: var(--first-color);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.navigation-items a {
+    color: var(--first-color);
+    font-size: var(--normal-font);
+    font-weight: 500;
+}
+
+.navigation-items a:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-items a:hover {
+    color: var(--second-color);
+}
+
+/*---Home---*/
+
+/*---Common styles f/all sections---*/
+
+/*---About---*/

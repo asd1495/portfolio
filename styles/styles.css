@@ -474,7 +474,7 @@ header.sticky .nav-bar {
     transition: .3 ease;
 }
 
-.portfolio-model .active {
+.portfolio-model.active {
     visibility: visible;
     opacity: 1;
 }

@@ -399,3 +399,116 @@ header.sticky .nav-bar {
 }
 
 /*---Portfolio---*/
+.portfolio .container .content {
+    width: 100%;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 100%;
+    gap: 35px;
+    margin: 0 auto;
+}
+
+.portfolio-list .img-card {
+    position: relative;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-list .img-card .overlay {
+    transition: 1s ease;
+}
+
+.portfolio-list .img-card:hover .overlay {
+    z-index: 777;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-list .img-card .info {
+    z-index: 777;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: #fff;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.portfolio-list .img-card:hover .info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-list .img-card .info {
+    font-size: 1.5em;
+}
+
+.portfolio-list .img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-model {
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--transparency-01);
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3 ease;
+}
+
+.portfolio-model .active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-model-body {
+    position: relative;
+    background: var(--modal-bg);
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5 ease;
+}
+
+.portfolio-model .active .portfolio-model-body {
+    transform: translateY(0);
+}
+
+.portfolio-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.portfolio-model-body h3 {
+    font-size: 1.5em;
+}
+
+.portfolio-model-body img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}

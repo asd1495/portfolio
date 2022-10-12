@@ -264,25 +264,30 @@
                 </div>
                 <div class="contact-right">
                     <p>Or if you prefer,<span>leave me a message!<br></span>I promise to answer back</p>
-                    <form action="" class="contact-form">
+                    <form method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbwx-_kkPeejlA5H8LHknz3pa8SjdLAD2HsTJUPNpBmsJDA4CfN8cs5Xtro2-r_txe0BpQ/exec" class="contact-form" id="my-form" target="_blank">
                         <div class="first-row">
-                            <input type="text" placeholder="Name">
+                            <input name="name" type="text" placeholder="Name">
                         </div>
                         <div class="second-row">
-                            <input type="email" placeholder="your@mail.com">
-                            <input type="text" placeholder="Subject">
+                            <input name="email" type="email"  placeholder="your@mail.com">
+                            <input name="subject" type="text"  placeholder="Subject">
                         </div>
                         <div class="third-row">
-                            <textarea name="" id="" rows="7" placeholder="Write your message here!"></textarea>
+                            <textarea name="message" id="" rows="7" placeholder="Write your message here!"></textarea>
                         </div>
                         <button class="btn" type="submit">
                             Send Message<i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        
+    </footer>
 
 <script src="./src/main.js"></script>
 </body>

@@ -555,6 +555,7 @@ header.sticky .nav-bar {
     color: var(--third-color);
     font-size: 1.6em;
     margin-bottom: 30px;
+    margin-left: 10px;
     font-weight: 700;
 }
 

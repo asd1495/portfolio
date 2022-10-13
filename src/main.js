@@ -31,4 +31,23 @@ window.addEventListener("scroll", function () {
 scrollTopBtn.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-})
+});
+
+//Nav menu items active on scroll
+window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const scrollY = window.pageYOffset;
+    
+    sections.forEach(current => {
+        let sectionHeight = current.offsetHeight;
+        let sectionTop = current.offsetTop - 50;
+        let id = current.getAttribute("id");
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(".navigation-items a[href*=" + id + "]").classList.add("active");
+        }
+        else {
+            document.querySelector(".navigation-items a[href*=" + id + "]").classList.remove("active");
+        }
+    });
+});

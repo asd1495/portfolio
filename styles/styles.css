@@ -143,6 +143,10 @@ header.sticky .nav-bar {
     font-weight: 500;
 }
 
+.navigation-items a.active {
+    color: var(--second-color);
+}
+
 .navigation-items a:not(:last-child) {
     margin-right: 50px;
 }

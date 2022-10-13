@@ -59,7 +59,28 @@ li {
 }
 
 /*---Scroll to top---*/
+.scrollToTop-btn {
+    z-index: 99999;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--small-font);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s ease-out;
+}
 
+.scrollToTop-btn.active {
+    right: 20px;
+    pointer-events: all;
+    opacity: 1;
+    transition: .5s ease-in;
+}
 /*---Light/dark switcher---*/
 
 /*---Scroll bar---*/
@@ -414,11 +435,10 @@ header.sticky .nav-bar {
 .portfolio-list .img-card {
     position: relative;
     max-width: 100%;
-    height: 360px;
+    height: 235px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
-    cursor: pointer;
 }
 
 .portfolio-list .img-card .overlay {
@@ -446,7 +466,7 @@ header.sticky .nav-bar {
 }
 
 .portfolio-list .img-card .info h3 {
-    -webkit-text-stroke: 2px var(--first-color);
+    -webkit-text-stroke: 1px var(--first-color);
 }
 
 .portfolio-list .img-card .info i {
@@ -467,7 +487,7 @@ header.sticky .nav-bar {
 .portfolio-list .img-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .demo-btn {

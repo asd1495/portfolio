@@ -32,6 +32,31 @@
     --scroll-thumb-hover: #454f6b;
 }
 
+.dark-theme {
+    --first-color: #fff;
+    --second-color: #6a59d1;
+    --third-color: #a9afc3;
+
+    /*---Hover---*/
+
+
+    /*---Background---*/
+    --body-bg: #0e1b31;
+    --card-bg: #132347;
+    --modal-bg: #102048;
+    --bg-transparency: rgba(255, 255, 255, 0.1);
+    --transparency-01: rgba(255, 255, 255, 0.1);
+    --line-color: #454f6b;
+
+    /*---Color filter---*/
+    --color-filter: invert(0);
+
+    /*---Scroll bar---*/
+    --scroll-bar-color: #c1ceff;
+    --scroll-thumb-color: #282f4e;
+    --scroll-thumb-hover: #454f6b;
+}
+
 * {
     margin: 0;
     padding: 0 10px;
@@ -94,7 +119,16 @@ li {
     font-size: 1.2em;
     border-radius: 5px 0 0 5px;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
 }
+
+.theme-btn .fa-sun /*.theme-btn.sun .fa-moon*/ {
+    display: none;
+}
+
+/*.theme-btn.sun .fa-sun {
+    display: block;
+}*/
 
 /*---Scroll bar---*/
 ::-webkit-scrollbar {

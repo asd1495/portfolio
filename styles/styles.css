@@ -82,6 +82,19 @@ li {
     transition: .5s ease-in;
 }
 /*---Light/dark switcher---*/
+.theme-btn {
+    z-index: 999999;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background: var(--transparency-01);
+    backdrop-filter: blur(20px);
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shadow);
+}
 
 /*---Scroll bar---*/
 ::-webkit-scrollbar {

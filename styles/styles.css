@@ -655,15 +655,62 @@ header.sticky .nav-bar {
         justify-content: center;
         align-items: center;
         background: var(--transparency-01);
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .navigation.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation-items {
+        position: relative;
+        background: var(--third-color);
+        width: 600px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    .navigation.active .navigation-items {
+        transform: translateY(0);
+    }
+
+    .navigation-items a {
+        margin: 15px 50px;
+    }
+
+    .nav-close-btn {
+        position: absolute;
+        background: url(/img/assets/close-btn.png) no-repeat;
+        filter: var(--color-filter);
+        background-size: 12px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        cursor: pointer;
     }
 
     .nav-menu-btn {
-        background: url()no-repeat;
+        background: url(/img/assets/menu-btn.png) no-repeat;
         filter: var(--color-filter);
         background-size: 30px;
         background-position: center;
         width: 40px;
         height: 40px;
         cursor: pointer;
+        display: block;
     }
 }

@@ -93,3 +93,14 @@ navItems.forEach((navItem) => {
         navigation.classList.remove("active");
     });
 });
+
+//Scroll reveal
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 100
+});
+
+    //Target elements
+ScrollReveal().reveal('.home .info h2', { delay: 500, origin: 'left' });

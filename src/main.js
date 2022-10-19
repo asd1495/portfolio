@@ -113,7 +113,7 @@ ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 500, origin: 
 
 ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
 
-ScrollReveal().reveal('.about .description, .copy-right', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.about .description, .contact-right', { delay: 600, origin: 'right' });
 
 ScrollReveal().reveal('.skills-description, .contact-left h2', { delay: 700, origin: 'left' });
 

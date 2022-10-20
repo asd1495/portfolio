@@ -103,7 +103,7 @@ ScrollReveal({
 });
 
 //Target elements 'Home'
-ScrollReveal().reveal('.home .info h2, .section-title-01, section-title-02', { delay: 500, origin: 'left' });
+/*ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 500, origin: 'left' });
 
 ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 600, origin: 'right' });
 
@@ -118,3 +118,12 @@ ScrollReveal().reveal('.about .description, .contact-right', { delay: 600, origi
 ScrollReveal().reveal('.skills-description, .contact-left h2', { delay: 700, origin: 'left' });
 
 ScrollReveal().reveal('.education, .portfolio .img-card', { delay: 800, origin: 'bottom', interval: 200 });
+
+//Disable Scroll reveal on mobile
+let match = window.matchMedia( "(max-width: 1070px)" );
+let scrollReveal = new ScrollReveal();
+let mobile = scrollReveal.tools.mobile();
+
+if (!mobile || (mobile && match.matches)) {
+    scrollReveal('.home .info h2, .section-title-01, .section-title-02', { reset: true });
+}*/

@@ -591,9 +591,62 @@ header.sticky .nav-bar {
 }
 
 .portfolio-list .img-card img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+}
+
+.portfolio-modal {
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--transparency-01);
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.portfolio-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-modal-body {
+    position: relative;
+    background: var(--modal-bg);
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+
+.portfolio-modal.active .portfolio-modal-body {
+    transform: translateY(0);
+}
+
+.portfolio-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.portfolio-modal-body h3{
+    font-size: 1.5em;
+}
+
+.portfolio-modal-body img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 30px;
 }
 
 .demo-btn {
